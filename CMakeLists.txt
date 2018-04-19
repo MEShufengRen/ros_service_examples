@@ -22,3 +22,5 @@ target_link_libraries(mp3_inventory
 
 target_link_libraries(mp3_controller
   ${catkin_LIBRARIES})
+add_dependencies(mp3_inventory ros_service_examples_generate_messages_cpp)
+add_dependencies(mp3_controller ros_service_examples_generate_messages_cpp)
